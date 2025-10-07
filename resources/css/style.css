@@ -157,3 +157,45 @@ h2::after{
     
 }
 
+ion-icon{
+    font-size: 320%;
+    color: #e67e22;
+    margin-bottom: 5px;
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 110%;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+
+}
+
+.info-bottom>div>p{
+    font-size: 90%;
+    line-height: 145%;
+
+}
+
+/**** Seção galeria ****/
+.section-gallery>ul{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.section-gallery ul li{
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.section-gallery ul li figure img{
+    width: 100%;
+    transform: scale(1.15);
+}
+
+.section-gallery ul li figure img:hover,
+.section-gallery ul li figure img:active{
+    transform: scale(1.05);
+}
