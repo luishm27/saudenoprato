@@ -182,21 +182,63 @@ h3{
 .section-gallery>ul{
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
 }
 
 .section-gallery ul li{
     flex-basis: 300px;
     flex-grow: 1;
+    background-color: black;
+    overflow: hidden;
 }
 
 .section-gallery ul li figure img{
     width: 100%;
     transform: scale(1.15);
+    transition: 0.3s;
+    /* filter: blur(2px); */
+    filter: brightness(100%);
+    filter: contrast(80%);
+    /* filter: grayscale(100%); */
+    /* filter: saturate(200%); */
+    /* filter: sepia(80%); */
+    filter: opacity(65%);
 }
 
 .section-gallery ul li figure img:hover,
 .section-gallery ul li figure img:active{
     transform: scale(1.05);
+    /* filter: blur(0); */
+    /* filter: brightness(100%); */
+    /* filter: contrast(110%); */
+    /* filter: grayscale(0%); */
+    filter: opacity(100%);
 }
 
+/**** Seção fotos ****/
+.section-pictures{
+    padding: 80px 0;
+
+}
+
+.section-pictures figure{
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+    width: 70%;
+    margin: 0 auto;
+    height: 450px;
+    gap: 8px;
+}
+
+.section-pictures figure img{
+    width: 10%;
+    object-fit: cover;
+    border: 2px solid #e67e22;
+    border-radius: 10px;
+    transition: width ease-in-out 0.5s;
+}
+
+.section-pictures figure img:hover{
+    width: 45%;
+
+}
