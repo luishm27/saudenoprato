@@ -1,0 +1,14 @@
+// Quando o documento html carregado e pronto para uso.
+$(document).ready(
+    function(){
+
+        $('.js--mobile-nav-icon').click(
+            function(){
+            var nav = $('.js--main-nav');
+            nav.slideToggle(200);
+            }
+        );
+
+    }
+
+);
